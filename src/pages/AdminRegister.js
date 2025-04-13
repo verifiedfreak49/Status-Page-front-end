@@ -16,9 +16,10 @@ const AdminRegister = () => {
     if (password !== confirmPassword) {
       return setError("Passwords do not match");
     }
-
+    https://status-page-back-end.onrender.com/api
+    http://localhost:5000/api/admin/register
     try {
-      const response = await axios.post("http://localhost:5000/api/admin/register", { email, password });
+      const response = await axios.post("https://status-page-back-end.onrender.com/api/admin/register", { email, password });
       console.log("Registration successful:", response.data);
       // After successful registration, redirect to login page (or you might auto-login)
       navigate("/login");
