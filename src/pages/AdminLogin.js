@@ -16,7 +16,7 @@ const AdminLogin = () => {
 
     try {
       // Send login credentials to backend API
-      const response = await axios.post('http://localhost:5000/api/admin/login', { email, password });
+      const response = await axios.post('https://status-page-back-end.onrender.com/api/login', { email, password });
 
       // If successful, set a localStorage flag and redirect to admin dashboard
       localStorage.setItem('isAdmin', 'true');
